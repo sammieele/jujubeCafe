@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jujube Cafe</title>
+<link rel="icon" type="images/realjujube" href="images/realjujube.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" >
+<!--Basic Styling-->
+<style>
+body, html {
+  height: 100%;
+  font-family: "Montserrat", "Inconsolata";
+  background-color: #f6f6f6;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/cafe1.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE & GOALS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 12am</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Jujube<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">275 Jujube Blvd, CA</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!--Begin Main Section-->
+
+<!-- About Container (Main Section)-->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT JUJUBE</span></h5>
+    <p>Jujube Cafe was founded in 2017 by Sammie Le with the intention of bringing Asian-style artistian goodies to California. Sammie has crafted and perfected many Asian-inspired baked goods, receiving great applaud by food conniseurs throughout the world. Jujube Cafe prides itself on our reliability, surprises and taste. In addition to our ever-evolving baked goods and bubble tea menu, we serve fresh made-to-order lunchbox cakes and catering.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"We promise fresh baked and mouth-watering desserts to your hands till midnight everyday." Late nights aren't so bad if you have something sweet.</i></p>
+      <p>Baker, Bobrarista and Owner: Sammie Le</p>
+    </div>
+    <img src="images/pastries.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 12am &lpar;we support our fellow students!&rpar; </p>
+    <p><strong>Address:</strong> 275 Jujube Blvd, CA</p>
+  </div>
+</div>
+
+<!-- Menu Container (Main Section)-->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENU</span></h5>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Munch</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <!--Food Tab (Menu Container)-->
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Mango Cloud Cake</h5>
+      <p class="w3-text-grey">Chinese-inspired fruit cake filled with cream and sweet mangos 5.50</p><br>
+    
+      <h5>Green Tea Roll Cake</h5>
+      <p class="w3-text-grey">Japanese matcha filled bread with savory cream 28.00</p><br>
+    
+      <h5>Milk Cream Bread</h5>
+      <p class="w3-text-grey">Fluffy white bread with sweet milk cream filling 4.50</p><br>
+    
+      <h5>Red Bean Donut</h5>
+      <p class="w3-text-grey">Bun filled with red bean paste and powdered sugar 7.50</p><br>
+    
+      <h5>Souffle Cheesecake</h5>
+      <p class="w3-text-grey">Sammie's specialty. Asian-inspired fluffy cheesecake that melts in your mouth 15.00</p>
+    </div>
+
+    <!--Drinks Tab (Menu Container)-->
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Rose Bubble Milk Tea</h5>
+      <p class="w3-text-grey">Milk tea with hints of rose and golden bubbles 5.50</p><br>
+    
+      <h5>Four Seasons Fruit Green Tea</h5>
+      <p class="w3-text-grey">Green tea filled with many fruits 6.50</p><br>
+    
+      <h5>Dirty Brown Sugar Milk Tea</h5>
+      <p class="w3-text-grey">Rich brown sugar milk tea 5.00</p><br>
+    
+      <h5>Lychee Oolong Tea</h5>
+      <p class="w3-text-grey">A fresh twist on the traditional oolong tea loved by many 5.50</p><br>
+    
+      <h5>Oreo Milk Tea</h5>
+      <p class="w3-text-grey">Dedicated to those with really weird taste &lpar;I'm looking at you Leila&rpar; 4.50</p>
+    </div>  
+
+<!--Slideshow Images (Main Section)-->
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="images/bottledboba.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+      <img class="mySlides" src="images/cheesecake.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+      <img class="mySlides" src="images/coffee.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+
+      <!--Slideshow Buttons (Main Section)-->
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+  </div>
+</div>
+
+<!-- Contact/Area Container (Main Section)-->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at <u>275 Jujube Blvd, CA</u> in the heart of Little Tokyo's Japanese Village Plaza.</p>
+    <img src="images/littletokyo.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. We offer vegetarian, gluten-free and vegan drink and food options. If someone in your party has an allergy, please let us known in the message section. We will do our best to accommodate you.</p>
+    <p><strong>Reserve</strong> a spot, order a group order or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Number of People" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2024-01-24T15:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!--Visitor Progress Bar-->
+<div class="w3-content" style="max-width:700px">
+<div class="w3-grayscale w3-round-xlarge">
+  <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">GOALS</span></h5>
+  <div class="w3-container w3-dark-gray w3-round-xlarge" style="width:65%">65%</div>
+</div>
+
+<!--New Page Added: Goals Container (Main Section)-->
+<!--Combined with "Where" navbar link for aesthetic purposes-->
+<div class="w3-container" style="max-width:700px">
+  <br>
+  <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-center">Click to Open for Visitor Rewards</button>
+  <div id="Demo1" class="w3-container w3-hide">
+    <h4>25%</h4>
+    <p>Free $20 gift card with one drink or food purchase</p>
+    <h4>50%</h4>
+    <p>K-pop pop up event!</p>
+    <h4>75%</h4>
+    <p>All drinks are half-off for two weeks!</p>
+    <h4>100%</h4>
+    <p>Hmm, it'd be boring if I told you right now wouldn't it?</p>
+  </div>
+  <br>
+  <div class="w3-container" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FAMOUS VISITORS</span></h5>
+    <table class="w3-table-all">
+      <thead>
+        <tr class="w3-light-grey w3-hover-dark-grey">
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Affiliation</th>
+        </tr>
+      </thead>
+      <tr class="w3-hover-grey">
+        <td>Yunjin</td>
+        <td>Huh</td>
+        <td>LE SSERAFIM</td>
+      </tr>
+      <tr class="w3-hover-grey">
+        <td>Hongjoong</td>
+        <td>Kim</td>
+        <td>ATEEZ</td>
+      </tr>
+      <tr class="w3-hover-grey">
+        <td>Beomgyu</td>
+        <td>Choi</td>
+        <td>TXT</td>
+      </tr>
+    </table>
+    </div>
+    <br>
+    <p><span class="w3-tag">Why is Jujube so famous?</span> Jujube Cafe is known for bringing many trends from Asia to America. Sammie and the staff at Jujube work hard to advertise Jujube Cafe across the globe, and our efforts have been a success. Ateez's Hongjoong has taken famous pictures at our cafe that are all over social media. Just take one look at Pinterest! Huh Yunjin has told us that she wishes to bring the other members to our cafe as well. It's seriously not uncommon to see famous k-pop idols at our cafe, especially near concert days.</p>
+
+  <script>
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+<!--End Main Section-->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>2023 Sammie L & WHS Web Design | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
